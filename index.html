@@ -39,10 +39,84 @@
             <a href="submit.html" class="sub-an-id">Submit an Idea</a>
         </nav>
     </main>
-    <main>
-        <div class="explore-section" id="explore-section">
-            
+    <main class="explore-section" id="explore-section">
+        <div class="third-nav">
+            <div class="search-section" id="search-section">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input class="search-input" type="text" placeholder="Search for bugs, fixes or apps...">
+            </div>
+            <div class="two-buttons">
+                <div class="filter-dropdown">
+                    <button class="filter-button">
+                        <i class="fa-solid fa-filter filter-icon"></i>
+                            Filters
+                        <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </button> 
+                    <div class="dropdown-content" id="dropdown-content">
+                        <div class="dropdown-section">
+                            <h4>Categories</h4>
+                            <label class="dropdown-item">
+                                <input type="checkbox" name="category" value="Social Media">
+                                <span class="checkmark"></span>
+                                Social Media
+                            </label>
+                            <label class="dropdown-item">
+                                <input type="checkbox" name="category" value="Entertainment">
+                                <span class="checkmark"></span>
+                                Entertainment
+                            </label>
+                            <label class="dropdown-item">
+                                <input type="checkbox" name="category" value="Productivity">
+                                <span class="checkmark"></span>
+                                Productivty
+                            </label>
+                            <label class="dropdown-item">
+                                <input type="checkbox" name="category" value="Games">
+                                <span class="checkmark"></span>
+                                Games
+                            </label>
+                            <label class="dropdown-item">
+                                <input type="checkbox" name="category" value="Others">
+                                <span class="checkmark"></span>
+                                Others
+                            </label>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>Status</h4>
+                            <label class="dropdown-item">
+                                <input type="checkbox" name="status" value="Open">
+                                <span class="checkmark"></span>
+                                Open
+                            </label>
+                            <label class="dropdown-item">
+                                <input type="checkbox" name="status" value="In Progress">
+                                <span class="checkmark"></span>
+                                In Progress
+                            </label>
+                            <label class="dropdown-item">
+                                <input type="checkbox" name="status" value="Solved">
+                                <span class="checkmark"></span>
+                                Solved
+                            </label>
+                        </div>
+                        <div class="dropdown-buttons">
+                            <button class="btn-filter-clear" id="clearFiltersBtn">Clear</button>
+                            <button class="btn-filter-apply" id="applyFiltersBtn">Apply</button>
+                        </div>
+                    </div>               
+                </div>
+                <div class="trending-button">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    Trending
+                </div>
+            </div>
+        </div>
+        <div class="issue-card-data">
+        
         </div>
     </main>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
