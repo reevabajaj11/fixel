@@ -106,6 +106,7 @@ body {
     border-radius: 0.4rem;
     display: inline-block;
     font-weight: 600;
+    text-align: center;
 }
 
 .start-exp{
@@ -118,4 +119,22 @@ body {
     background-color: #fff;
     color: #374151;
     border: 0.05rem solid #D1D5DB;
+}
+
+@media (max-width: 600px){
+    .head{
+        justify-content: space-evenly;
+    }
+
+    .brand-name, .sign-up, .top-nav{
+        margin: 0;
+    }
+
+    .top-nav{
+        gap:6%;
+    }
+    
+    .second-nav{
+        flex-direction: column;
+    }
 }
